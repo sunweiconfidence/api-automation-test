@@ -1,0 +1,30 @@
+{
+    "ApiMethods":[
+        {
+            "APIMethod":"PerformES",
+           "requestUrl": "http://localhost/vSearch.GenericAPI/api/newStaffInfo",
+           "esSearchCode":"elastic",
+           "PageNo":1,
+           "StaffID":"445532",
+           "LogStaffID":"33",
+           "Name":"Joke",
+           "Status":"1",
+           "Staffs":"test"
+        },
+        {
+           "APIMethod":"SearchCode",
+           "requestUrl": "http://localhost/vSearch.GenericAPI/api/postStaffInfo",
+           "StaffID":"445532",
+           "LogStaffID":"33",
+           "Name":"Joke",
+           "Status":"1",
+           "Staffs":"test"
+       }
+       ]
+}
+
+       
+    
+
+   
+
