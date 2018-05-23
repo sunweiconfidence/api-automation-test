@@ -21,19 +21,19 @@ function AutomationAPITest() {
         apiMethod.forEach(function(element,index){
            
            switch(element.APIMethod){
-               case "PerformES":
-               requestUri = '{0}/{1}/{2}'.format(element.requestUrl,element.EsSearchCode, element.PageNo);
-               jsonObj = { "StaffID": element.StaffID, "LogStaffID": element.LogStaffID,"Name":element.Name,"Status":element.Status,"Staffs":element.Staffs };
+               case "ESByKeyword":
+               requestUri = '{0}/{1}/{2}'.format(element.RequestUrl, element.EsSearchCode, element.PageNo);
+               jsonObj = { "QueryKeyword": element.QueryKeyword, "FilterKeyword": element.FilterKeyword,"SortKeyword":element.SortKeyword };
                break;
-               case "SearchCode":
-               requestUri = '{0}'.format(element.requestUrl);
-               jsonObj = { "LogStaffID": element.LogStaffID,"Name":element.Name,"Status":element.Status,"Staffs":element.Staffs };
+               case "ElasticSearchByKeyword":
+               requestUri = '{0}/{1}/{2}'.format(element.RequestUrl, element.EsSearchCode, element.PageNo);
+               jsonObj = { "Email": element.Email,"APIAccess": element.APIAccess,"QueryKeyword": element.QueryKeyword, "FilterKeyword": element.FilterKeyword,"SortKeyword":element.SortKeyword };
                break;
                default:
                jsonObj = {};
                requestUri = {};
            }
-           //var jsonObj = { "StaffID": element.StaffID, "LogStaffID": element.LogStaffID,"Name":element.Name,"Status":element.Status,"Staffs":element.Staffs };
+           
            request({
                uri: requestUri,
                method: 'POST',
