@@ -3,7 +3,7 @@
         {
            "APIMethod":"ESByKeyword",
            "RequestUrl": "http://localhost/ESCenterAPI/api/ES",
-           "EsSearchCode":"xx_xxDemo",
+           "EsSearchCode":"France_SearchCode_SecurityUserAttribute",
            "PageNO":1,
            "QueryKeyword":"t",
            "FilterKeyword":"",
@@ -12,10 +12,10 @@
         {
            "APIMethod":"ElasticSearchByKeyword",
            "RequestUrl": "http://localhost/ESCenterAPI/api/ElasticSearch",
-           "EsSearchCode":"xx_xxDemo",
+           "EsSearchCode":"France_SearchCode_SecurityUserAttribute",
            "PageNO":1,
-           "Email":"XXX@163.com",
-           "APIAccess":"WTU3cVd6UitPZ0FmM0Z4Wk1YM2pnSi9NRyt1SmxpdzFISnNiQXFxa21wZmhPM0ZGbEVPSVZRPT0=",
+           "Email":"xxx@xxx.com",
+           "APIAccess":"xxxxxxxxxxxxxxxxxxx",
            "QueryKeyword":"t",
            "FilterKeyword":"",
            "SortKeyword":""

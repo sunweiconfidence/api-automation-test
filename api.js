@@ -22,11 +22,11 @@ function AutomationAPITest() {
            
            switch(element.APIMethod){
                case "ESByKeyword":
-               requestUri = '{0}/{1}/{2}'.format(element.RequestUrl, element.EsSearchCode, element.PageNo);
+               requestUri = '{0}/{1}/{2}'.format(element.RequestUrl, element.EsSearchCode, element.PageNO);
                jsonObj = { "QueryKeyword": element.QueryKeyword, "FilterKeyword": element.FilterKeyword,"SortKeyword":element.SortKeyword };
                break;
                case "ElasticSearchByKeyword":
-               requestUri = '{0}/{1}/{2}'.format(element.RequestUrl, element.EsSearchCode, element.PageNo);
+               requestUri = '{0}/{1}/{2}'.format(element.RequestUrl, element.EsSearchCode, element.PageNO);
                jsonObj = { "Email": element.Email,"APIAccess": element.APIAccess,"QueryKeyword": element.QueryKeyword, "FilterKeyword": element.FilterKeyword,"SortKeyword":element.SortKeyword };
                break;
                default:
