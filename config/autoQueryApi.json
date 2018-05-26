@@ -2,7 +2,7 @@
     "ApiMethods":[
         {
            "APIMethod":"ESByKeyword",
-           "RequestUrl": "http://localhost/ESCenterAPI/api/ES",
+           "RequestUrl": "http://localhost/vSearch.GenericAPI/api/ES",
            "EsSearchCode":"France_SearchCode_SecurityUserAttribute",
            "PageNO":1,
            "QueryKeyword":"t",
@@ -11,12 +11,12 @@
         },
         {
            "APIMethod":"ElasticSearchByKeyword",
-           "RequestUrl": "http://localhost/ESCenterAPI/api/ElasticSearch",
+           "RequestUrl": "http://localhost/vSearch.GenericAPI/api/ElasticSearch",
            "EsSearchCode":"France_SearchCode_SecurityUserAttribute",
            "PageNO":1,
            "Email":"xxx@xxx.com",
            "APIAccess":"xxxxxxxxxxxxxxxxxxx",
-           "QueryKeyword":"t",
+           "QueryKeyword":"MM",
            "FilterKeyword":"",
            "SortKeyword":""
        }

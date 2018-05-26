@@ -42,19 +42,27 @@ function AutomationAPITest() {
            }, function(error, response, body) {
                var str_json = JSON.stringify(body);    
                var fileName = '{0}result.json'.format(element.APIMethod);
+               
                fs.exists(fileName, function(exists){
                    if(exists){
                         fs.unlink(fileName, function(){
                             //console.log('delete success') ;
+                            fs.writeFile(fileName, str_json, 'utf8', function(){
+    
+                                let apiGenerateDesc = 'API Method {0} Generate {1} file in current directory'.format(element.APIMethod,fileName);
+                                console.log(apiGenerateDesc);
+                            });
                             }) ;
                     }
-
-                    fs.writeFile(fileName, str_json, 'utf8', function(){
+                    else {
+                        fs.writeFile(fileName, str_json, 'utf8', function(){
     
-                        let apiGenerateDesc = 'API Method {0} Generate {1} file in current directory'.format(element.APIMethod,fileName);
-                        console.log(apiGenerateDesc);
-                    });
+                            let apiGenerateDesc = 'API Method {0} Generate {1} file in current directory'.format(element.APIMethod,fileName);
+                            console.log(apiGenerateDesc);
+                        });
+                    }
                });
+              
            });
         });
 }
